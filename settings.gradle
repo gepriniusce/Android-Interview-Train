@@ -1,1 +1,6 @@
-include ':app', ':app'
+include ':app', ':lib_component', ':templet_activity'
+//        ':ComponentPlugin',
+//        ':ComponentApi',
+//        ':ComponentCompiler',
+//        ':ComponentImpl',
+//        ':ComponentRxImpl'
