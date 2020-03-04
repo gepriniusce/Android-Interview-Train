@@ -1,4 +1,4 @@
-include ':app', ':lib_component', ':templet_activity'
+include ':app', ':lib_component', ':templet_activity', ':demo_jobschduler', ':demo_kotlin', ':demo_plugin', ':demo_framework'
 //        ':ComponentPlugin',
 //        ':ComponentApi',
 //        ':ComponentCompiler',
