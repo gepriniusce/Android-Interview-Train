@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pr.tongson.train_aidl_server">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!---->
+        <!--enabled 是否可以被系统实例化-->
+        <!--exported 是否能被其他应用隐式调用-->
+        <!--process 创建一个进程使用服务-->
+        <service
+            android:name=".service.LoginService"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote_server">
+            <!---->
+            <intent-filter>
+                <action android:name="Train_Binder_Server_Action" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

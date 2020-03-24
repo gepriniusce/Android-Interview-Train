@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pr.tongson.train_scall_a.MyViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.PlaceholderFragment">
+
+    <!--输入图片的大小ViewGroup会根据尺寸等比缩放成banner，以设计图的单位px-->
+    <ImageView
+        android:layout_width="640px"
+        android:layout_height="300px"
+        android:src="@mipmap/banner" />
+
+    <FrameLayout
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</pr.tongson.train_scall_a.MyViewGroup>

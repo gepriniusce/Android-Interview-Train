@@ -1,4 +1,4 @@
-include ':app', ':lib_component', ':templet_activity', ':demo_jobschduler', ':demo_kotlin', ':demo_plugin', ':demo_framework', ':train_okhttp', ':train_rxjava', ':train_event', ':train_aimator', ':train_java'
+include ':app', ':lib_component', ':templet_activity', ':demo_jobschduler', ':demo_kotlin', ':demo_plugin', ':demo_framework', ':train_okhttp', ':train_rxjava', ':train_event', ':train_aimator', ':train_java', ':train_slide', ':train_zip', ':myapplication', ':train_scall_a', ':train_inflater', ':train_materialdesign', ':train_webview', ':train_annotation', ':train_compiler', ':train_apt_javapoet', ':train_diy_recycleview', ':train_aidl_client', ':train_aidl_server', ':train_mvx', ':train_diy_view'
 //        ':ComponentPlugin',
 //        ':ComponentApi',
 //        ':ComponentCompiler',
