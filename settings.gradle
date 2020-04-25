@@ -4,3 +4,6 @@ include ':app', ':lib_component', ':templet_activity', ':demo_jobschduler', ':de
 //        ':ComponentCompiler',
 //        ':ComponentImpl',
 //        ':ComponentRxImpl'
+//include ':train::bluetooth'
+include ':train_bluetooth'
+include ':train_video'

@@ -1,5 +1,13 @@
 package pr.tongson.train_rxjava;
 
+import android.os.Bundle;
+import android.os.Handler;
+import android.util.Log;
+import android.view.View;
+
+import org.reactivestreams.Subscriber;
+import org.reactivestreams.Subscription;
+
 import androidx.appcompat.app.AppCompatActivity;
 import io.reactivex.BackpressureStrategy;
 import io.reactivex.Flowable;
@@ -18,19 +26,13 @@ import pr.tongson.train_rxjava.diy.Observable2;
 import pr.tongson.train_rxjava.diy.ObservableOnSubscribe2;
 import pr.tongson.train_rxjava.diy.Observer2;
 
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-
-import org.reactivestreams.Subscriber;
-import org.reactivestreams.Subscription;
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Handler
     }
 
     public void cllick01(View view) {
@@ -83,13 +85,13 @@ public class MainActivity extends AppCompatActivity {
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> emitter) throws Exception {
-
+                emitter.onNext(1);
             }
         }).
                 map(new Function<Integer, String>() {
                     @Override
                     public String apply(Integer integer) throws Exception {
-                        return null;
+                        return "integer-->String";
                     }
                 }).
                 subscribeOn(Schedulers.io()).

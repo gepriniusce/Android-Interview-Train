@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">train_bluetooth</string>
+    <string name="please_open_blue">请先打开蓝牙</string>
+</resources>

@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.NestedScrollingChild;
+import androidx.core.view.NestedScrollingParent;
 import pr.tongson.train_scall_a.ui.UIUtils;
 import pr.tongson.train_scall_a.ui.main.BottomFragment;
 
@@ -20,7 +22,7 @@ import pr.tongson.train_scall_a.ui.main.BottomFragment;
  *
  * @author tongson
  */
-public class MyViewGroup extends ViewGroup {
+public class MyViewGroup extends ViewGroup implements NestedScrollingParent, NestedScrollingChild {
 
     private static final String TAG = "Tongson MyViewGroup";
 

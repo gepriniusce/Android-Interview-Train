@@ -1,7 +1,6 @@
 package pr.tongson.train_rxjava.diy;
 
 
-import android.database.Observable;
 
 /**
  * <b>Create Date:</b> 2020-03-06<br>

@@ -1,6 +1,6 @@
 package pr.tongson.train_aimator;
 
-import android.animation.ValueAnimator;
+import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;

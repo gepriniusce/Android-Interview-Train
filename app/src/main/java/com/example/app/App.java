@@ -8,11 +8,15 @@ import com.xiaojinzi.component.impl.application.ModuleManager;
 import com.xiaojinzi.component.support.LogUtil;
 import com.xiaojinzi.component.support.RxErrorIgnoreUtil;
 
+import java.util.HashMap;
+
 
 public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        HashMap
 
         long startTime = System.currentTimeMillis();
         // 初始化组件化相关
